@@ -60,7 +60,7 @@ article {
     font-size: 18px;
     background-color: #ffffff;
     min-height: 200px;
-    border-radius: 10px;
+    border-radius: 5px;
     margin: 5vh 0;
     padding: 38px;
     box-sizing: border-box;
@@ -93,13 +93,40 @@ article {
     text-align: justify;
 }
 
+.artCont > img{
+    width: 120px;
+    height: 120px;
+    padding-right: 10px;
+    padding-top: 4px;
+    float: left;
+}
+
 .artFooter {
     padding-top: 20px;
     margin-top: 20px;
     border-top: solid 2px #eeeeee;
-    height: 50px;
+}
+
+.artCat{
+    font-size: 1em;
+    background-color: #ffffff;
+    padding: 3px 15px;
+    border:solid 1px #000000;
+    display: inline-block;
+    border-radius: 20px;
+    transition: all .5s ease;
+}
+
+.artCat:hover{
+    background-color: #000000;
+    color: #ffffff;
+    cursor: pointer;
 }
 
 #cos {
     height: 500vh;
+}
+
+p{
+    margin: 0;
 }
