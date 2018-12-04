@@ -5,6 +5,10 @@ body {
     /*font-family: 'Noto Sans', sans-serif;*/
 }
 
+*:focus{
+    outline: none;
+}
+
 /*NAGŁÓWEK STRONY WRAZ Z LOGO*/
 header {
     text-align: center;
@@ -17,6 +21,7 @@ header {
     font-family: 'Great Vibes', cursive;
 
 }
+
 
 /*GŁÓWNA NAWIGACJA*/
 .mainNav {
@@ -156,6 +161,7 @@ p {
 
 .clear {
     clear: both;
+    display: none;
 }
 
 .hamburger {
@@ -224,5 +230,11 @@ p {
         box-sizing: border-box;
         padding: 10px;
         float: inherit;
+    }
+
+    .mainLogo{
+        float: left;
+        margin-left: 25px;
+
     }
 }
