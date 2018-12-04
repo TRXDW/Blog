@@ -5,6 +5,7 @@ body {
     /*font-family: 'Noto Sans', sans-serif;*/
 }
 
+/*NAGŁÓWEK STRONY WRAZ Z LOGO*/
 header {
     text-align: center;
     background-color: #ffffff;
@@ -17,6 +18,7 @@ header {
 
 }
 
+/*GŁÓWNA NAWIGACJA*/
 .mainNav {
     background-color: #ffffff;
     height: 70px;
@@ -49,6 +51,7 @@ header {
     cursor: pointer;
 }
 
+/*PRZESTRZEN NA ARTYKULY*/
 main {
     margin: 0 auto;
     margin-top: 50px;
@@ -56,6 +59,7 @@ main {
     height: 100vh;
 }
 
+/*ARTYKUŁ STRONA GŁÓWNA*/
 article {
     font-size: 18px;
     background-color: #ffffff;
@@ -69,6 +73,7 @@ article {
     box-shadow: 0px 0px 15px -6px rgba(0, 0, 0, 0.75);
 }
 
+/*NAGŁÓWEK ARTYKUŁU*/
 .artHead {
     padding-bottom: 20px;
     margin-bottom: 20px;
@@ -88,12 +93,15 @@ article {
     cursor: pointer;
 }
 
+
+/*CZESC ZAWARTOSCI ARTYKULU*/
 .artCont {
     font-size: 1.35em;
     text-align: justify;
 }
 
-.artCont > img{
+/*MINIATURA ARTYKUŁU*/
+.artCont>img {
     width: 120px;
     height: 120px;
     padding-right: 10px;
@@ -101,32 +109,59 @@ article {
     float: left;
 }
 
+/*STOPKA ARTYKULU*/
 .artFooter {
     padding-top: 20px;
     margin-top: 20px;
     border-top: solid 2px #eeeeee;
 }
 
-.artCat{
+.artCat,
+.artReadOn {
     font-size: 1em;
-    background-color: #ffffff;
     padding: 3px 15px;
-    border:solid 1px #000000;
     display: inline-block;
     border-radius: 20px;
-    transition: all .5s ease;
+    cursor: pointer;
+    transition: background-color .5s ease, color .5s ease;
 }
 
-.artCat:hover{
+.artCat {
+    background-color: #ffffff;
+    border: solid 1px #000000;
+}
+
+.artCat:hover {
     background-color: #000000;
     color: #ffffff;
-    cursor: pointer;
 }
 
-#cos {
-    height: 500vh;
+.artReadOn {
+    background-color: #ffffff;
+    color: #5a034e;
+    border: solid 1px #5a034e;
 }
 
-p{
+.artReadOn:hover{
+    background-color: #5a034e;
+    color: #ffffff;
+}
+
+p {
     margin: 0;
+}
+
+/*DLA MOBILNYCH*/
+@media (max-width : 840px) {
+    header {
+        position: relative;
+    }
+
+    .mainNav {
+        display: none;
+    }
+
+    article {
+        font-size: 15px;
+    }
 }
