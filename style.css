@@ -69,11 +69,14 @@ article {
 }
 
 .artHead{
-    height: 75px;
     padding-bottom: 20px;
     margin-bottom: 20px;
     border-bottom: solid 2px #eeeeee;
 
+}
+
+.art_title{
+    margin: 0;
 }
 
 .artCont{
