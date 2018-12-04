@@ -228,7 +228,7 @@ p {
     }
 
     .mainNav {
-        position: fixed;
+        position: sticky;
         width: 100%;
         display: none;
         top: 64px;
