@@ -224,7 +224,7 @@ p {
     header {
         width: 100%;
         position: fixed;
-        z-index: 2;
+        z-index: 3;
     }
 
     .mainNav {
@@ -232,6 +232,7 @@ p {
         width: 100%;
         display: none;
         top: 64px;
+        z-index: 2;
     }
 
     .mainNav li {
