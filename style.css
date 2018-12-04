@@ -47,7 +47,7 @@ header {
 
 .mainNav li:hover {
     box-sizing: border-box;
-    border-bottom: solid 2px #000000;
+    border-bottom: solid 2px #5a034e;
     cursor: pointer;
 }
 
@@ -145,7 +145,7 @@ article {
     border: solid 1px #5a034e;
 }
 
-.artReadOn:hover{
+.artReadOn:hover {
     background-color: #5a034e;
     color: #ffffff;
 }
@@ -154,10 +154,54 @@ p {
     margin: 0;
 }
 
+.clear {
+    clear: both;
+}
+
+.hamburger {
+    float: right;
+    margin-top: 5px;
+    margin-right: 10px;
+    width: 40px;
+    height: 25px;
+    border: 0;
+    border-top: 2px solid #000000;
+    background: transparent;
+    position: relative;
+    transition: 0.3s transform linear;
+    display: none;
+}
+
+.hamburger::before,
+.hamburger::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    border-top: 2px solid #000000;
+    transform: translateY(10px);
+}
+
+.hamburger::after {
+    transform: translateY(25px);
+    transition: 0.3s transform linear;
+}
+
+.hamburger:focus {
+    transform: rotate(45deg) translateY(5px);
+    border: none;
+}
+
+.hamburger:focus::after {
+    transform: rotate(-90deg) translateX(-10px);
+}
+
 /*DLA MOBILNYCH*/
 @media (max-width : 840px) {
     header {
-        position: relative;
+        width: 100%;
+        position: fixed;
     }
 
     .mainNav {
@@ -167,17 +211,17 @@ p {
     article {
         font-size: 15px;
     }
+
+    .hamburger{
+        display: block;
+    }
 }
 
-@media (max-width : 450px){
-    .artReadOn{
+@media (max-width : 450px) {
+    .artReadOn {
         width: 100%;
         box-sizing: border-box;
         padding: 10px;
         float: inherit;
     }
-}
-
-.clear{
-    clear: both;
 }
