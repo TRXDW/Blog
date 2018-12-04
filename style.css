@@ -124,6 +124,8 @@ article {
     border-radius: 20px;
     cursor: pointer;
     transition: background-color .5s ease, color .5s ease;
+    margin-bottom: 10px;
+    text-align: center;
 }
 
 .artCat {
@@ -137,6 +139,7 @@ article {
 }
 
 .artReadOn {
+    float: right;
     background-color: #ffffff;
     color: #5a034e;
     border: solid 1px #5a034e;
@@ -164,4 +167,17 @@ p {
     article {
         font-size: 15px;
     }
+}
+
+@media (max-width : 450px){
+    .artReadOn{
+        width: 100%;
+        box-sizing: border-box;
+        padding: 10px;
+        float: inherit;
+    }
+}
+
+.clear{
+    clear: both;
 }
