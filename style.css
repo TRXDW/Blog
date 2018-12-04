@@ -27,7 +27,7 @@ header {
     cursor: pointer;
 }
 
-header:hover{
+header:hover {
     color: #5a034e;
 }
 
@@ -101,6 +101,10 @@ article {
     cursor: pointer;
     margin: 0;
     font-size: 2em;
+}
+
+.artTitle:hover {
+    color: #5a034e;
 }
 
 .artDate {
