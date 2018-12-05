@@ -5,12 +5,17 @@ const mobileViewport = window.matchMedia("(max-width: 840px)");
 
 
 function hamMenu() {
-    if (menu.style.display === 'block') {
-        menu.style.display = 'none';
+    console.log(menu.className);
+    if (menu.style.visibility === 'visible') {
         btn.classList.remove('hamburgerCurrent');
+        menu.classList.remove('slideIn');
+        menu.classList.add('slideOut');
+        menu.style.visibility = 'hidden';
     } else {
-        menu.style.display = 'block';
+        menu.style.visibility = 'visible';
         btn.classList.add('hamburgerCurrent');
+        menu.classList.add('slideIn');
+        menu.classList.remove('slideOut');
     }
 
 }
@@ -19,9 +24,11 @@ mobileViewport.addListener(showMenu);
 
 function showMenu() {
     if (mobileViewport.matches) {
-        menu.style.display = 'none';
+        menu.style.visibility = 'hidden';
     } else {
-        menu.style.display = 'block';
+        menu.style.visibility = 'visible';
         btn.classList.remove('hamburgerCurrent');
+        menu.classList.remove('slideOut');
+        menu.classList.remove('slideIn');
     }
 }
