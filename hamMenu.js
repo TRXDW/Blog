@@ -1,15 +1,16 @@
 const btn = document.getElementById('hamburgerMenu');
 btn.addEventListener('click', hamMenu)
-btn.addEventListener('focusout', hamMenu)
 const menu = document.getElementById('menu');
 const mobileViewport = window.matchMedia("(max-width: 840px)");
 
 
 function hamMenu() {
-    if (document.activeElement === btn) {
-        menu.style.display = 'block';
-    } else {
+    if (menu.style.display === 'block') {
         menu.style.display = 'none';
+        btn.classList.remove('hamburgerCurrent');
+    } else {
+        menu.style.display = 'block';
+        btn.classList.add('hamburgerCurrent');
     }
 
 }
@@ -21,5 +22,6 @@ function showMenu() {
         menu.style.display = 'none';
     } else {
         menu.style.display = 'block';
+        btn.classList.remove('hamburgerCurrent');
     }
 }
