@@ -5,24 +5,16 @@ const mobileViewport = window.matchMedia("(max-width: 840px)");
 
 
 function hamMenu() {
-    console.log(menu.className);
-    if (menu.style.visibility === 'visible') {
-        btn.classList.remove('hamburgerCurrent');
+    menu.style.visibility = 'visible';
+    if(menu.className ==='mainNav slideIn'){
         menu.classList.remove('slideIn');
         menu.classList.add('slideOut');
-        menu.style.visibility = 'hidden';
-    } /*else if(menu.className === 'mainNav slideOut') {
-        console.log('true');
-        menu.style.visibility = 'hidden';
-        menu.classList.remove('slideOut');
-    } */else {
-        menu.style.visibility = 'visible';
-        btn.classList.add('hamburgerCurrent');
+        btn.classList.remove('hamburgerCurrent');
+    }else if(btn.className === 'hamburger' ){
         menu.classList.add('slideIn');
         menu.classList.remove('slideOut');
+        btn.classList.add('hamburgerCurrent');
     }
-    console.log(menu.style.visibility);
-
 }
 
 
