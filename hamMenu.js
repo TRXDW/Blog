@@ -11,14 +11,21 @@ function hamMenu() {
         menu.classList.remove('slideIn');
         menu.classList.add('slideOut');
         menu.style.visibility = 'hidden';
-    } else {
+    } /*else if(menu.className === 'mainNav slideOut') {
+        console.log('true');
+        menu.style.visibility = 'hidden';
+        menu.classList.remove('slideOut');
+    } */else {
         menu.style.visibility = 'visible';
         btn.classList.add('hamburgerCurrent');
         menu.classList.add('slideIn');
         menu.classList.remove('slideOut');
     }
+    console.log(menu.style.visibility);
 
 }
+
+
 
 mobileViewport.addListener(showMenu);
 
