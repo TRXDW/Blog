@@ -2,7 +2,6 @@ body {
     margin: 0;
     background-color: #ebe9e9;
     font-family: 'Rajdhani', sans-serif;
-    /*font-family: 'Noto Sans', sans-serif;*/
     height: 100%;
 }
 
@@ -19,8 +18,6 @@ header {
     position: sticky;
     top: 0;
     font-weight: bold;
-    /*font-family: 'Charmonman', cursive;
-    font-family: 'Great Vibes', cursive;*/
     font-family: 'Amatic SC', cursive;
     color: #000000;
     transition: color 1s ease;
