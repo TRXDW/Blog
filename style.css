@@ -1,3 +1,7 @@
+html{
+    height: 100%;
+}
+
 body {
     margin: 0;
     background-color: #ebe9e9;
@@ -68,7 +72,8 @@ main {
     padding: 50px 0;
     padding-bottom: 70px;
     max-width: 1200px;
-    min-height: 100vh;
+    min-height: 100%;
+    box-sizing: border-box;
 }
 
 /*ARTYKUŁ STRONA GŁÓWNA*/
@@ -237,6 +242,7 @@ footer {
     }
 
 
+
 /*DLA MOBILNYCH*/
 @media (max-width : 840px) {
     header {
@@ -261,9 +267,6 @@ footer {
         display: block;
     }
 
-    article {
-        font-size: 15px;
-    }
 
     .hamburger {
         display: inline;
@@ -285,6 +288,10 @@ footer {
 
     footer{
         font-size: 1em;
+    }
+
+    article {
+        font-size: 15px;
     }
 }
 
