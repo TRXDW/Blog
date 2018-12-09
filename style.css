@@ -70,7 +70,7 @@ header:hover {
 main {
     margin: 0 auto;
     padding: 50px 0;
-    padding-bottom: 70px;
+    padding-bottom: 83px;
     max-width: 1200px;
     min-height: 100%;
     box-sizing: border-box;
@@ -271,6 +271,10 @@ footer {
     .hamburger {
         display: inline;
     }
+
+    main{
+        padding: 80px 0;
+    }
 }
 
 @media (max-width : 450px) {
@@ -322,4 +326,38 @@ footer {
     to {
         top: -350px;
     }
+}
+
+/*PANEL*/
+.panel{
+    font-size: 18px;
+    background-color: #ffffff;
+    min-height: 600px;
+    border-radius: 5px;
+    padding: 38px;
+    box-sizing: border-box;
+    -webkit-box-shadow: 0px 0px 15px -6px rgba(0, 0, 0, 0.75);
+    -moz-box-shadow: 0px 0px 15px -6px rgba(0, 0, 0, 0.75);
+    box-shadow: 0px 0px 15px -6px rgba(0, 0, 0, 0.75);
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    align-content: center;
+}
+
+.option{
+    text-align: center;
+    background-color: #5a034e;
+    cursor: pointer;
+    width: 260px;
+    height: 120px;
+    color: #ffffff;
+    box-sizing: border-box;
+    margin: 10px;
+    transition: opacity .5s ease;
+    border-radius: 10px;
+}
+
+.option:hover{
+    opacity: .7;
 }
